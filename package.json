@@ -1,0 +1,20 @@
+{
+  "name": "asmr-logic-app",
+  "version": "1.0.0",
+  "description": "Aplikasi yang dibuat dengan Golang dan Javascipt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adityarizqi7/asmr-logic-app.git"
+  },
+  "keywords": ["asmr-logic-app"],
+  "author": "Aditya Rizqi Ardhana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adityarizqi7/asmr-logic-app/issues"
+  },
+  "homepage": "https://github.com/Adityarizqi7/asmr-logic-app#readme"
+}
