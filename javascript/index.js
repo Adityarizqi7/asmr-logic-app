@@ -1,42 +1,45 @@
-// Mungkin aku bikin program logika aja, entar tebak aja programnya
+// Oke Guys, saya akan membagikan tutorial  cara embuat program fibonacci
 
-// OOP JS
+// Logikanya adalah menumlahkan angka sekarang dengan angka sebelumnya kemudian hasilnya di posisikan setelah angka kedua tersebut.
 
-class Sequence{
+// Misalnya, awalnya 1
+// 0 + 1
+//  1 1
+//  1 + 1
+// 1 1 2, dan seterusnya
 
+class Sequence {
+
+    
     constructor(point) {
         this.point = point
     }
 
-    // Logikanya angka sekarang di jumlahkan dengan angka sebelumnya kemudian hasilnya di posisikan didepan kedua angka tersebut
+    // Membuat function untuk menjalakan logikanya menampilkan hasilnya
 
     display() {
 
-        let resultSeq = []
+        let result = []
 
-        let n = 1;
-        let n_1 = 1;
-        let n_2 = 0;
+        // Looping untuk show the result
 
-        // Bentar mikir ges
-        // Bentar ges
-        // Looping sampa batas inputan
+        let n = 1
+        let n1 = 1
+        let n2 = 0
+
         for(let i = 0; i < this.point; i++) {
-            
-            resultSeq.push(n);
 
-            n = n_1 + n_2;
-            n_2 = n_1;
-            n_1 = n;
+            result.push(n);
+
+            n = n1 + n2
+            n2 = n1 // Posisi dari n2 akan diambil dari nilai n1 sebelumnya
+            n1 = n // dan posisi n1 akan diambil dari hasil penjumlahannya
         }
 
-        // Udah bener ya ges itu
-
-        return resultSeq;
+        return result;
     }
-
 }
 
-// Instance Object From Class Sequence
-const call = new Sequence(11);
-console.info(call.display())
+// Instance object dari class Sequence
+const fibonacci = new Sequence(11)
+console.log(fibonacci.display()) 
